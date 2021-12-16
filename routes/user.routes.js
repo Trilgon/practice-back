@@ -8,8 +8,8 @@ const router = new Router();
 const userController = require("../controllers/user.controllers");
 
 router.post("/auth", userController.userAuth);
-router.post("/adminSelectTask", userController.adminSelTask);
-router.post("/adminAddTask", userController.adminAddTask);
-router.post("/adminAddEmp", userController.adminAddEmp);
+router.post("/selTask", userController.selTask);
+// router.post("/adminAddTask", userController.adminAddTask);
+// router.post("/adminAddEmp", userController.adminAddEmp);
 
 module.exports = router;
